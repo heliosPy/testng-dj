@@ -7,3 +7,7 @@ def examin(request):
     return HttpResponse(
         "< h1 > R. Srinath Reddy < /h1 >"
     )
+
+
+def studentindex(request):
+    return HttpResponse('This is new view')
