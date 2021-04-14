@@ -20,7 +20,7 @@ def studentindex(request):
     session_id = request.META.get('HTTP_SESSION')
     print(session_id)
     # session = Session.objects.get(session_id=session_id)
-
+    print('these are the changes
     return HttpResponse('This is new view')
 
 
@@ -31,4 +31,5 @@ def add_student(request):
         if form.is_valid():
             print(form.errors)
             return HttpResponse('hi')
+    print('it good to see you here')
     return render(request, 'add_student.html')
