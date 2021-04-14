@@ -15,3 +15,5 @@ class StudentForm(forms.Form):
         except ValidationError:
             raise forms.ValidationError('Please enter a valid email')
         return email
+class BaseForm(forms.Form):
+    pass
